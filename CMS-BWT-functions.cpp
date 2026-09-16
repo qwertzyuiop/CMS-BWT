@@ -325,7 +325,6 @@ void process_collection_small_reference(Args arg, std::string &collFileName) {
 
   uint64_t maxValue = 0;
   std::vector<uint8_t> listOfChars;
-  listOfChars.reserve(_sn);
 
   std::ifstream streamInfile(collFileName, std::ios::in);
   std::string line, content;
@@ -1111,7 +1110,6 @@ void process_collection_large_reference(Args arg, std::string &collFileName) {
 
   uint64_t maxValue = 0;
   std::vector<uint8_t> listOfChars;
-  listOfChars.reserve(_sn);
 
   std::ifstream streamInfile(collFileName, std::ios::in);
   std::string line, content;
